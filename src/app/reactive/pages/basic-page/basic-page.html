@@ -14,9 +14,11 @@
             class="form-control"
             placeholder="Nombre del producto"
           />
-          @if(isValidField('name')){
+          @if(formUtils.isValidEmail(myForm, 'name')){
 
-          <span class="form-text text-danger"> {{getFieldError('name')}} </span>
+          <span class="form-text text-danger">
+            {{formUtils.getFieldError (myForm,'name')}}
+          </span>
           }
         </div>
       </div>
@@ -31,10 +33,10 @@
             placeholder="Precio del producto"
             formControlName="price"
           />
-          @if(isValidField('price')){
+          @if(formUtils.isValidEmail(myForm, 'price')){
 
           <span class="form-text text-danger">
-            {{getFieldError('price')}}
+            {{formUtils.getFieldError (myForm,'price')}}
           </span>
           }
         </div>
@@ -51,10 +53,10 @@
             formControlName="inStorage"
           />
 
-          @if(isValidField('inStorage')){
+          @if(formUtils.isValidEmail(myForm,'inStorage')){
 
           <span class="form-text text-danger">
-            {{getFieldError('inStorage')}}
+            {{formUtils.getFieldError (myForm,'inStorage')}}
           </span>
           }
         </div>
