@@ -13,7 +13,7 @@ export const reactiveRoutes: Routes = [
         component: BasicPage,
       },
       {
-        path: '*dynamic',
+        path: 'dynamic',
         title: 'Dinámicos',
         component: DynamicPage,
       },
