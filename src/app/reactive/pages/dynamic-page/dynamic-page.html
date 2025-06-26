@@ -11,7 +11,7 @@
         placeholder="Nombre de la persona"
         formControlName="name"
       />
-      @if (formUtils.isValidEmail(myForm, 'name')) {
+      @if (formUtils.isValidField(myForm, 'name')) {
       <span class="form-text text-danger">
         {{formUtils.getFieldError(myForm, 'name')}}
       </span>
@@ -67,7 +67,7 @@
         </span>
         }
       </div>
-      } @if (formUtils.isValidEmail(myForm, 'favoriteGames')) {
+      } @if (formUtils.isValidField(myForm, 'favoriteGames')) {
       <span class="form-text text-danger"> debe tener al menos 2 juegos </span>
       }
     </div>

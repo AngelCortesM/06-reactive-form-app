@@ -62,12 +62,12 @@
         <label
           class="form-check-label"
           for="flexCheckDefault"
-          [class.text-danger]="formUtils.isValidEmail(myForm, 'termAndConditions')"
+          [class.text-danger]="formUtils.isValidField(myForm, 'termAndConditions')"
         >
           Términos y condiciones de uso
         </label>
       </div>
-      @if (formUtils.isValidEmail(myForm, 'termAndConditions')) {
+      @if (formUtils.isValidField(myForm, 'termAndConditions')) {
       <span class="form-text text-danger">
         Debe de aceptar las condiciones de uso
       </span>
